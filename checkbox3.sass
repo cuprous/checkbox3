@@ -1,0 +1,148 @@
+$color-green: #36b846
+$color-blue: #4183d7
+$color-yellow: #ff9c00
+$color-light-blue: #2caef5
+$color-red: #e50011
+$color-black: #333
+$color-grey: #CCC
+$color-white: #FFF
+
+.checkbox3
+  position: relative
+  input
+    position: absolute
+    left: -9999px
+  label
+    display: block
+    position: relative
+    padding: 11px 0 11px 30px
+    white-space: nowrap
+    cursor: pointer
+    font-size: 12px
+    margin-bottom: 0
+    margin-top: -4px
+  label::before
+    content: ''
+    display: block
+    position: absolute
+    top: 10px
+    bottom: 10px
+    left: 0
+    width: 21px
+    height: 21px
+    border: 1px solid $color-grey
+    border-radius: 1px
+    transition: background-color 0.2s
+    overflow: hidden
+    vertical-align: middle
+    text-align: center
+  label::after
+    content: ''
+    display: block
+    position: absolute
+    top: 10px
+    bottom: 10px
+    left: 0
+    width: 19px
+    height: 19px
+    border: 12px solid $color-white
+    margin: 1px
+    -webkit-transition: all 0.05s
+    transition: all 0.05s
+    opacity: 0
+  input:checked + label::before
+    font-family: FontAwesome
+    border-width: 1px
+    border-style: solid
+    background-color: $color-blue
+    border-color: $color-blue
+    color: #fff
+  input:checked + label::after
+    border: 3px solid $color-white
+    opacity: 1
+  .checkbox-on-icon
+    position: absolute
+    width: 20px
+    height: 20px
+    line-height: 22px
+    vertical-align: middle
+    top: 5px
+    font-size: 14px
+    text-align: center
+    color: $color-white
+
+.checkbox3.checkbox-fa
+  label::after
+    border: 0
+  input:checked + label::after
+    border: 0
+
+.checkbox3.checkbox-circle
+  label::before
+    border-radius: 21px
+  label::after
+    border-radius: 21px
+
+.checkbox3.checkbox-round
+  label::before
+    border-radius: 4px
+  label::after
+    border-radius: 4px
+
+// Color
+.checkbox3.checkbox-info
+  input:checked + label::before
+    background-color: $color-light-blue
+    border-color: $color-light-blue
+
+.checkbox3.checkbox-success
+  input:checked + label::before
+    background-color: $color-green
+    border-color: $color-green
+
+.checkbox3.checkbox-warning
+  input:checked + label::before
+    background-color: $color-yellow
+    border-color: $color-yellow
+
+.checkbox3.checkbox-danger
+  input:checked + label::before
+    background-color: $color-red
+    border-color: $color-red
+
+// Sizing
+.checkbox3.checkbox-sm
+  label
+    padding: 8px 0 8px 22px
+  label::before
+    width: 14px
+    height: 14px
+    line-height: 14px
+  label::after
+    width: 12px
+    height: 12px
+
+
+.checkbox3.checkbox-lg
+  label
+    padding: 15px 0 15px 40px
+  label::before
+    width: 28px
+    height: 27px
+    line-height: 24px
+  label::after
+    width: 26px
+    height: 25px
+
+.checkbox3.checkbox-inline, .radio3.radio-inline
+  padding-top: 0
+  padding-left: 0
+  padding-right:0
+  margin-left: 0
+
+  input[type=checkbox], input[type=radio]
+    position: absolute
+
+.checkbox3.checkbox-inline+.checkbox3.checkbox-inline,
+.radio3.radio-inline+.radio3.radio-inline
+  margin-left: 20px
