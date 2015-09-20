@@ -1,7 +1,7 @@
 # Checkbox3
-### CSS3 Style for Checkbox and Radio Button
+CSS3 Style for Checkbox and Radio Button
 
-[Live Demo](http://tui2tone.github.io/checkbox3)
+#### [Live Demo](http://tui2tone.github.io/checkbox3)
 
 ### Usage
 
@@ -10,8 +10,6 @@
 ##### Radio Button
 
 #### Colorize
-
-This library using style like bootstrap
 
 For Checkbox
 
