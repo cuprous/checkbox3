@@ -18,7 +18,7 @@
   },
   "license": "MIT",
   "authors": [
-    "Tui2Tone <tui2tone@gmail.com>"
+    "Tui2Tone <tui2tone@gmail.com> (http://www.tui2tone.com)"
   ],
   "ignore": [
     "gulpfile.js",
@@ -28,5 +28,9 @@
     "node_modules",
     "bower_components",
     "public"
-  ]
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/tui2tone/checkbox3.git"
+  }
 }
