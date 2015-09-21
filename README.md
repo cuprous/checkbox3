@@ -60,8 +60,6 @@ Include dist/checkbox3.css or dist/checkbox3.min.css in your html. If your use s
 <link rel="stylesheet" href="./css/checkbox3.min.css">
 ```
 
-#### Browser Support
-
 #### Credit
 
 [Bootstrap](http://getbootstrap.com/) and [FontAwesome](https://fortawesome.github.io/Font-Awesome/)

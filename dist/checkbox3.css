@@ -22,8 +22,11 @@
     width: 21px;
     height: 21px;
     border: 1px solid #CCC;
-    border-radius: 1px;
-    transition: background-color 0.2s;
+    -moz-border-radius: 1px;
+         border-radius: 1px;
+    -webkit-transition: background-color 0.2s;
+       -moz-transition: background-color 0.2s;
+            transition: background-color 0.2s;
     overflow: hidden;
     vertical-align: middle;
     text-align: center; }
@@ -39,7 +42,8 @@
     border: 12px solid #FFF;
     margin: 1px;
     -webkit-transition: all 0.05s;
-    transition: all 0.05s;
+    -moz-transition: all 0.05s;
+         transition: all 0.05s;
     opacity: 0; }
   .checkbox3 input:checked + label::before {
     font-family: FontAwesome;
@@ -105,13 +109,16 @@
   color: #444; }
 
 .checkbox3.checkbox-circle label::before, .checkbox3.checkbox-circle label::after {
-  border-radius: 20px; }
+  -moz-border-radius: 20px;
+       border-radius: 20px; }
 
 .checkbox3.checkbox-round label::before, .checkbox3.checkbox-round label::after {
-  border-radius: 4px; }
+  -moz-border-radius: 4px;
+       border-radius: 4px; }
 
 .checkbox3.checkbox-s1 label::before, .checkbox3.checkbox-s1 label::after {
-  border-radius: 4px; }
+  -moz-border-radius: 4px;
+       border-radius: 4px; }
 
 .checkbox3.checkbox-light label::before {
   background-color: transparent; }
@@ -199,8 +206,11 @@
     width: 21px;
     height: 21px;
     border: 1px solid #CCC;
-    border-radius: 1px;
-    transition: background-color 0.2s;
+    -moz-border-radius: 1px;
+         border-radius: 1px;
+    -webkit-transition: background-color 0.2s;
+       -moz-transition: background-color 0.2s;
+            transition: background-color 0.2s;
     overflow: hidden;
     vertical-align: middle;
     text-align: center; }
@@ -216,7 +226,8 @@
     border: 12px solid #FFF;
     margin: 1px;
     -webkit-transition: all 0.05s;
-    transition: all 0.05s;
+    -moz-transition: all 0.05s;
+         transition: all 0.05s;
     opacity: 0; }
   .radio3 input:checked + label::before {
     font-family: FontAwesome;
@@ -229,7 +240,8 @@
     border: 3px solid #FFF;
     opacity: 1; }
   .radio3 label::before, .radio3 label::after {
-    border-radius: 20px; }
+    -moz-border-radius: 20px;
+         border-radius: 20px; }
 
 .radio3.radio-check label::after {
   content: "\f00c";

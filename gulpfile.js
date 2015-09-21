@@ -1,11 +1,14 @@
 var gulp = require("gulp"),
     sass = require("gulp-sass"),
     minify = require("gulp-minify-css"),
-    rename = require('gulp-rename');
+    rename = require('gulp-rename'),
+    postcss = require('gulp-postcss'),
+    autoprefixer = require('autoprefixer');
 
 gulp.task("compile", function() {
   gulp.src('checkbox3.sass')
     .pipe(sass().on('error', sass.logError))
+    .pipe(postcss([ autoprefixer({ browsers: ['> 1%', 'last 2 versions', 'Firefox < 20','ie 6-8'] }) ]))
     .pipe(gulp.dest('dist'))
     .pipe(minify({compatibility: 'ie8'}))
     .pipe(rename({suffix: '.min'}))
