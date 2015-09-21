@@ -35,7 +35,11 @@ Modify bootstrap radio button to use like this.
 </div>
 ```
 
-#### Colorize
+
+
+#### Customize
+
+##### Colorize Class
 
 For Checkbox
 
@@ -45,7 +49,18 @@ For Radio Button
 
 `radio-primary` `radio-info` `radio-success` `radio-warning` `radio-danger`
 
-##### Customize Color
+##### Sizing Class
+
+sm for small , lg for large
+
+For Checkbox
+
+`checkbox-sm` `checkbox-lg`
+
+For Radio Button
+
+`radio-sm` `radio-lg`
+
 
 
 #### Installation

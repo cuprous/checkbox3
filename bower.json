@@ -12,9 +12,8 @@
     "css"
   ],
   "dependencies": {
-    "jquery": "2.1.0",
-    "bootstrap": "3.3.5",
-    "fontawesome": "4.4.0"
+    "bootstrap": "^3.3.5",
+    "fontawesome": "^4.1.0"
   },
   "license": "MIT",
   "authors": [

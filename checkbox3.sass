@@ -51,7 +51,6 @@ $color-white: #FFF
     transition: all 0.05s
     opacity: 0
   input:checked + label::before
-    font-family: FontAwesome
     border-width: 1px
     border-style: solid
     background-color: $color-black
@@ -72,7 +71,6 @@ $color-white: #FFF
   label::after
     width: 12px
     height: 12px
-
 
 .checkbox3.checkbox-lg
   label
@@ -104,6 +102,7 @@ $color-white: #FFF
   label::after
     content: "\f00c"
     font-family: FontAwesome
+    font-size: 12px
     color: $color-white
     width: 19px
     height: 20px
@@ -111,6 +110,19 @@ $color-white: #FFF
     vertical-align: middle
     text-align: center
     border-width: 0
+
+.checkbox3.checkbox-check.checkbox-sm
+  label::after
+    font-size: 9px
+    line-height: 12px
+    width: 12px
+
+
+.checkbox3.checkbox-check.checkbox-lg
+  label::after
+    font-size: 16px
+    line-height: 26px
+    width: 26px
 
 .checkbox3.checkbox-check.checkbox-light
   label::after
@@ -270,7 +282,7 @@ $color-white: #FFF
   input:checked + label::after
     border-width: 0
 
-.radio3.radio-check-light
+.radio3.radio-check.radio-light
   label::after
     content: "\f00c"
     font-family: FontAwesome
@@ -286,6 +298,41 @@ $color-white: #FFF
   input:checked + label::after
     border-width: 0
     color: $color-black
+
+.radio3.radio-sm
+  label
+    padding: 8px 0 8px 22px
+  label::before
+    width: 14px
+    height: 14px
+    line-height: 14px
+  label::after
+    width: 12px
+    height: 12px
+
+.radio3.radio-lg
+  label
+    padding: 15px 0 15px 40px
+  label::before
+    width: 28px
+    height: 27px
+    line-height: 24px
+  label::after
+    width: 26px
+    height: 25px
+
+.radio3.radio-check.radio-sm
+  label::after
+    font-size: 9px
+    line-height: 12px
+    width: 12px
+
+.radio3.radio-check.radio-lg
+  label::after
+    font-size: 16px
+    line-height: 26px
+    width: 26px
+
 
 // Color
 .radio3.radio-primary
@@ -314,31 +361,31 @@ $color-white: #FFF
     border-color: $color-red
 
 
-.radio3.radio-primary.radio-check-light
+.radio3.radio-primary.radio-light
   input:checked + label::before
     background-color: transparent
   input:checked + label::after
     color: $color-blue
 
-.radio3.radio-info.radio-check-light
+.radio3.radio-info.radio-light
   input:checked + label::before
     background-color: transparent
   input:checked + label::after
     color: $color-light-blue
 
-.radio3.radio-success.radio-check-light
+.radio3.radio-success.radio-light
   input:checked + label::before
     background-color: transparent
   input:checked + label::after
     color: $color-green
 
-.radio3.radio-warning.radio-check-light
+.radio3.radio-warning.radio-light
   input:checked + label::before
     background-color: transparent
   input:checked + label::after
     color: $color-yellow
 
-.radio3.radio-danger.radio-check-light
+.radio3.radio-danger.radio-light
   input:checked + label::before
     background-color: transparent
   input:checked + label::after
