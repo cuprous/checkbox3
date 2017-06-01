@@ -1,11 +1,7 @@
 # Checkbox3
 CSS3 Style for Checkbox and Radio Button.
 
-#### [Live Demo](http://tui2tone.github.io/checkbox3)
-
-![Demo](http://tui2tone.github.io/checkbox3/img/checkbox3.png)
-
-&nbsp;
+#### [Live Demo](http://cuprous.github.io/checkbox3)
 
 ### Usage
 
